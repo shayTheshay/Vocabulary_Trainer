@@ -25,7 +25,7 @@ def editing_mode():
             new_meaning = input("Enter the meaning of the new word: ").lower()
             update_word(unit, old_word, new_word, new_meaning)
         case "4":
-            list_words(unit)
+            list_words_in_unit(unit)
         case _:
             exit()
     return None
@@ -104,10 +104,16 @@ def update_word(unit:str, old_word:str, new_word:str, new_meaning:str):
         save_vocab() 
     return None
 
-def list_words(unit:str):
+def list_words_in_unit(unit:str):
     data = load_vocab()
 
     if unit_exist_in_data(data, unit):
         for entry in data[unit]:
             print(f"[{entry["word"]}, {entry["meaning"]}]")
     return None
+
+def list_units():
+    data = load_vocab()
+
+    for entry in data:
+        print(entry)

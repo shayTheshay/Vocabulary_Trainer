@@ -1,11 +1,12 @@
 from editing import editing_mode, json_exist
 from training import training_mode
+from testing import testing_mode
 
 def main():
     while (True):
         print("-----Vocabulary Trainer-----")
-        term = input(f"1 for Editing Mode\n2 for Training Mode\n3 for Testing Mode\nanything else to exit\nEnter: ")
-        term = "2"
+        #term = input(f"1 for Editing Mode\n2 for Training Mode\n3 for Testing Mode\nanything else to exit\nEnter: ")
+        term = "3"
         match term:
             case "1":
                 editing_mode()
@@ -16,7 +17,7 @@ def main():
                     print("Create the words first")
             case "3":
                 if json_exist():
-                    print("testing mode")
+                    testing_mode()
                 else:
                     print("Create the words first")
             case _:
