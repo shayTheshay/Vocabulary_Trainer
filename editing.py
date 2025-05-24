@@ -74,7 +74,7 @@ def add_word(unit:str, word:str, meaning:str):
     }
     data[unit].append(new_word)
 
-    save_vocab()
+    save_vocab(data)
     return None
     
 
@@ -89,7 +89,7 @@ def delete_word(unit:str, word:str):
                 data[unit].remove(entry)
                 break
     
-    save_vocab()
+    save_vocab(data)
     return None
 
 def update_word(unit:str, old_word:str, new_word:str, new_meaning:str):
@@ -101,7 +101,7 @@ def update_word(unit:str, old_word:str, new_word:str, new_meaning:str):
                 entry["word"] = new_word
                 entry["meaning"] = new_meaning
                 break
-        save_vocab() 
+        save_vocab(data) 
     return None
 
 def list_words_in_unit(unit:str):
