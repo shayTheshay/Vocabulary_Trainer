@@ -1,15 +1,16 @@
 from editing import editing_mode, json_exist
 from training import training_mode
 from testing import testing_mode
+from Upload import upload_vocab
 
 def main():
     while (True):
         print("-----Vocabulary Trainer-----")
-        #term = input(f"1 for Editing Mode\n2 for Training Mode\n3 for Testing Mode\nanything else to exit\nEnter: ")
-        term = "3"
+        term = input(f"1 for Editing Mode\n2 for Training Mode\n3 for Testing Mode\nanything else to exit\nEnter: ")
         match term:
             case "1":
                 editing_mode()
+                upload_vocab()
             case "2":
                 if json_exist():
                     training_mode()

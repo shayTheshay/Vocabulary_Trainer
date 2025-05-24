@@ -24,5 +24,33 @@
             "word": "chosen one",
             "meaning": "הנבחר"
         }
+    ],
+    "unit 1": [
+        {
+            "word": "food",
+            "meaning": "אוכל"
+        },
+        {
+            "word": "rice",
+            "meaning": "אורז"
+        },
+        {
+            "word": "torrent",
+            "meaning": "עמוד"
+        }
+    ],
+    "unit 2": [
+        {
+            "word": "ear",
+            "meaning": "לאכול"
+        },
+        {
+            "word": "great",
+            "meaning": "מדהים"
+        },
+        {
+            "word": "holy",
+            "meaning": "קדוש"
+        }
     ]
 }

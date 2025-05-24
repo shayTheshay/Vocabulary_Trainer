@@ -13,3 +13,12 @@ def save_vocab(data):
 
 
 times_for_word_review = 7
+
+
+
+########################################
+
+region = "us-west-2"
+file_path = "vocab.json"
+bucket_name = "vocabulary-json"
+
